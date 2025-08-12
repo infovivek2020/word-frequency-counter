@@ -32,3 +32,33 @@ curl "http://localhost:8080/count?text=Go+is+fun+and+go+is+easy"
   {"word": "easy", "count": 1},
   {"word": "fun", "count": 1}
 ]
+
+##Installation & Running ##
+1. Clone this repository:
+git clone https://github.com/yourusername/word-frequency-counter.git
+cd word-frequency-counter
+2. Run the application:
+go run main.go
+3. The server will start on:
+http://localhost:8080
+
+**How It Works**
+Extracts the text query parameter from the request.
+
+Converts all characters to lowercase.
+
+Removes punctuation using regex.
+
+Splits text into words.
+
+Counts each word’s frequency.
+
+Sorts results:
+
+First by frequency (high to low)
+
+Then alphabetically (A-Z) if counts are the same.
+
+Sends the result as a JSON array.
+
+
