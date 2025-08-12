@@ -44,21 +44,13 @@ http://localhost:8080
 
 **How It Works**
 Extracts the text query parameter from the request.
-
 Converts all characters to lowercase.
-
 Removes punctuation using regex.
-
 Splits text into words.
-
 Counts each word’s frequency.
-
 Sorts results:
-
 First by frequency (high to low)
-
 Then alphabetically (A-Z) if counts are the same.
-
 Sends the result as a JSON array.
 
 
